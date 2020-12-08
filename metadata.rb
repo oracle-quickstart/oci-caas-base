@@ -1,8 +1,8 @@
 name 'oci_caas_base'
 maintainer 'The Authors'
 maintainer_email 'you@example.com'
-license 'All Rights Reserved'
-description 'Installs/Configures oci_caas_base'
+license 'The Universal Permissive License (UPL), Version 1.0'
+description 'Base cookbook for OCI CAAS'
 version '0.1.0'
 chef_version '>= 16.0'
 
