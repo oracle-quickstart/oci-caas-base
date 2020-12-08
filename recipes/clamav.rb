@@ -13,7 +13,7 @@ cron 'run_clamscan' do
 end
 
 include_recipe 'yum-epel'
-include_recipe "clamav::services"
+include_recipe 'clamav::services'
 
 cookbook_file '/etc/yum.repos.d/oracle-linux-ol7.repo' do
   source 'oracle-linux-ol7.repo'

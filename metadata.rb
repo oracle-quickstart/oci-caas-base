@@ -3,11 +3,12 @@ maintainer 'The Authors'
 maintainer_email 'you@example.com'
 license 'The Universal Permissive License (UPL), Version 1.0'
 description 'Base cookbook for OCI CAAS'
-version '0.1.0'
+version '0.1.1'
 chef_version '>= 16.0'
 
 depends 'wazuh_agent'
 depends 'clamav'
+depends 'yum-epel'
 
 # The `issues_url` points to the location where issues for this cookbook are
 # tracked.  A `View Issues` link will be displayed on this cookbook's page when
