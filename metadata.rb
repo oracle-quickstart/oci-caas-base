@@ -6,7 +6,7 @@ description 'Base cookbook for OCI CAAS'
 version '0.1.2'
 chef_version '>= 16.0'
 
-depends 'wazuh_agent'
+#depends 'wazuh_agent'
 depends 'clamav', '~> 1.3.0'
 depends 'yum', '~> 3.13.0'
 depends 'wazuh_agent', '~> 0.1.0'
