@@ -3,6 +3,8 @@
 # Recipe:: suricata
 #
 
+include_recipe 'yum-epel'
+
 package 'suricata' do
   action :install
 end

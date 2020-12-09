@@ -3,6 +3,8 @@
 # Recipe:: scanning
 #
 
+include_recipe 'yum-epel'
+
 package 'lynis' do
   action :install
 end

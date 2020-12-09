@@ -10,12 +10,13 @@ cookbook_file '/etc/yum.repos.d/oracle-linux-ol7.repo' do
   mode '0644'
 end
 
-cookbook_file '/etc/yum.repos.d/epel.repo' do
-  source 'epel.repo'
-  owner 'root'
-  group 'root'
-  mode '0644'
-end
+include_recipe 'yum-epel'
+# cookbook_file '/etc/yum.repos.d/epel.repo' do
+#   source 'epel.repo'
+#   owner 'root'
+#   group 'root'
+#   mode '0644'
+# end
 
 cron 'chef_client' do
   action :create
