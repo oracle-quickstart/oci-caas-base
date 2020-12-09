@@ -3,6 +3,20 @@
 # Recipe:: base
 #
 
+cookbook_file '/etc/yum.repos.d/oracle-linux-ol7.repo' do
+  source 'oracle-linux-ol7.repo'
+  owner 'root'
+  group 'root'
+  mode '0644'
+end
+
+cookbook_file '/etc/yum.repos.d/epel.repo' do
+  source 'epel.repo'
+  owner 'root'
+  group 'root'
+  mode '0644'
+end
+
 cron 'chef_client' do
   action :create
   minute '0,15,30,45'
