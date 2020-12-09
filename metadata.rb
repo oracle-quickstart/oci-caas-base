@@ -7,7 +7,7 @@ version '0.1.2'
 chef_version '>= 16.0'
 
 depends 'wazuh_agent'
-depends 'clamav'
+depends 'clamav', '~> 1.3.0'
 #depends 'yum-epel'
 
 # The `issues_url` points to the location where issues for this cookbook are
