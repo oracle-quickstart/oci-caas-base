@@ -23,7 +23,7 @@ default['ossec']['conf']['syscheck']['ignore'] = [
 
 default['ossec']['conf']['syscheck']['directories'] = [
   { '@check_all' => true, 'content!' => '/etc,/usr/bin,/usr/sbin' },
-  { '@check_all' => true, 'content!' => '/bin,/sbin,/boot,/foo' },
+  { '@check_all' => true, 'content!' => '/bin,/sbin,/boot' },
   { '@check_all' => true, 'content!' => '/var/log/secure-*,/var/log/messages-*' },
 ]
 
