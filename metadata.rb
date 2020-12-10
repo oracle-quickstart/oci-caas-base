@@ -3,7 +3,7 @@ maintainer 'The Authors'
 maintainer_email 'you@example.com'
 license 'The Universal Permissive License (UPL), Version 1.0'
 description 'Base cookbook for OCI CAAS'
-version '0.1.2'
+version '0.1.3'
 chef_version '>= 16.0'
 
 depends 'wazuh_agent'
