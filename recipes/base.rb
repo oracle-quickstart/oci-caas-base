@@ -17,7 +17,7 @@ cron 'chef_client' do
   minute '0,15,30,45'
   user 'root'
   home '/opt/oci-caas/chef'
-  command 'chef-client -z --runlist oci_caas_base -j /opt/oci-caas/chef/attributes.json'
+  command "chef-client -z --runlist #{node['runlist_name']} -j /opt/oci-caas/chef/attributes.json"
 end
 
 # Install, configure, and enable chrony client
