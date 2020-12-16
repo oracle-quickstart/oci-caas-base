@@ -12,15 +12,7 @@ cron 'run_clamscan' do
   command 'clamscan -r / -i -o --exclude "^/var/lib/suricata/update/cache" --exclude "^/usr/bin/pnscan" 2> /var/log/clamscan.errors | logger -t clamd'
 end
 
-# include_recipe 'yum-epel'
 include_recipe 'clamav::services'
-
-# cookbook_file '/etc/yum.repos.d/oracle-linux-ol7.repo' do
-#   source 'oracle-linux-ol7.repo'
-#   owner 'root'
-#   group 'root'
-#   mode '0644'
-# end
 
 yum_options = []
 package_list = case node['platform']
