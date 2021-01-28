@@ -12,12 +12,12 @@ end
 
 include_recipe 'yum-epel'
 
-cron 'chef_client' do
+cron 'cinc_client' do
   action :create
   minute '0,15,30,45'
   user 'root'
-  home '/opt/oci-caas/chef'
-  command "chef-client -z --runlist #{node['runlist_name']} -j /opt/oci-caas/chef/attributes.json"
+  home '/opt/oci-caas/cinc'
+  command "cinc-client -z --runlist #{node['runlist_name']} -j /opt/oci-caas/cinc/attributes.json"
 end
 
 # Install, configure, and enable chrony client

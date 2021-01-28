@@ -3,7 +3,7 @@ maintainer 'The Authors'
 maintainer_email 'you@example.com'
 license 'Universal Permissive License v1.0'
 description 'Base cookbook for OCI CAAS'
-version '0.2.1'
+version '0.3.0'
 chef_version '>= 16.0'
 
 depends 'clamav', '~> 1.3.0'
