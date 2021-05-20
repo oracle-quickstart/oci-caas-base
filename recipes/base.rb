@@ -33,3 +33,10 @@ end
 service 'chronyd' do
   action :enable
 end
+
+cookbook_file '/etc/profile.d/autologout.sh' do
+  source 'autologout.sh'
+  owner 'root'
+  group 'root'
+  mode '0755'
+end
